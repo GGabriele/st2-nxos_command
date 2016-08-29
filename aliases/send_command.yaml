@@ -1,5 +1,5 @@
 ---
-name: ntc-nxos_command
+name: st2-nxos_command
 action_ref: st2-nxos_command.send_command
 description: Send a command to Cisco NXOS devices
 formats:
