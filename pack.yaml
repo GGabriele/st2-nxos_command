@@ -1,0 +1,6 @@
+---
+name: st2-nxos_command
+description: A simple pack to run arbitrary command on Cisco NXOS devices
+version: 0.1
+author: Gabriele Gerbino
+email: gabriele@networktocode.com

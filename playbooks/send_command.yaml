@@ -1,0 +1,22 @@
+---
+- name: send command to NXOS
+  hosts: "{{ devices | default('all') }}"
+  gather_facts: no
+  connection: local
+
+  vars:
+      nxos_provider:
+        username: "{{ un }}"
+        password: "{{ pwd }}"
+        transport: nxapi
+        host: "{{ inventory_hostname }}"
+
+  tasks:
+
+  - name: Send command
+    nxos_command:
+      commands: "{{ command | replace('.', ' ') }}"
+      provider: "{{ nxos_provider }}"
+    register: output
+
+  - debug: var=output

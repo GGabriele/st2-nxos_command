@@ -1,0 +1,11 @@
+---
+name: on_hello_event1
+pack: st2-nxos_command
+description: Sample rule firing on st2-nxos_command.event1.
+enabled: true
+trigger:
+    type: st2-nxos_command.event1
+action:
+    ref: st2-nxos_command.greet
+    parameters:
+        greeting: Yo
