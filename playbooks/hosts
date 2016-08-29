@@ -1,6 +1,2 @@
 [nxos]
 n9k2
-
-[nxos:vars]
-un=cisco
-pwd=!cisco123!
