@@ -18,7 +18,7 @@ class TestSensor(PollingSensor):
         self._stop = True
 
     def poll(self):
-        auth = HTTPBasicAuth('cisco', '!cisco123!')
+        auth = HTTPBasicAuth('test', 'test')
         headers = {
             'Content-Type': 'application/json'
         }
